@@ -23,7 +23,10 @@ export const DECLARATIONS = [
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'serverApp'}),
-    AppTranslateModule,
+    AppTranslateModule.forRoot({
+      defaultLang: "en",
+      languages: ['en', 'de', 'fr', 'it', 'nl']
+    }),
     HttpClientModule,
     CoreModule.forClient(),
     AppRouterModule
