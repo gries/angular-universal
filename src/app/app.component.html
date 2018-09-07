@@ -19,10 +19,7 @@
 
 {{'APP_NAME' | translate:{value: '1.2.3'} }}
 
-<li>
-    <a (click)="setLang('en')">EN</a>
-</li>
-<li>
-    <a (click)="setLang('de')">DE</a>
+<li *ngFor="let lang of getLangs()">
+    <span [switchLang]="lang">{{lang}}</span>
 </li>
 <router-outlet></router-outlet>

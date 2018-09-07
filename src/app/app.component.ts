@@ -9,14 +9,14 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AppComponent {
   title = 'angular-universal';
-
+  langs: string[] = ['en', 'de', 'fr', 'it', 'nl'];
   constructor(private aS: AppStateService, private translateService: TranslateService) {
     this.title = this.aS.title;
-    this.translateService.setDefaultLang('en');
+    this.translateService.setDefaultLang('de');
+    this.translateService.addLangs(this.langs)
  }
 
-  setLang(lang: string): void {
-    this.translateService.use(lang);
-}
-
+ getLangs() {
+   return this.translateService.getLangs();
+ }
 }
