@@ -16,4 +16,13 @@
     <h2><a routerLink="talks-overview">Talks Overview</a></h2>
   </li>
 </ul>
+
+{{'APP_NAME' | translate:{value: '1.2.3'} }}
+
+<li>
+    <a (click)="setLang('en')">EN</a>
+</li>
+<li>
+    <a (click)="setLang('de')">DE</a>
+</li>
 <router-outlet></router-outlet>
