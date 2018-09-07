@@ -1,3 +1,6 @@
 {
-    "APP_NAME": "Mein App Name {{value}}"
+    "APP_NAME": "Mein App Name {{value}}",
+    "HOME": {
+      "TITLE": "mein super titel!"
+    }
   }

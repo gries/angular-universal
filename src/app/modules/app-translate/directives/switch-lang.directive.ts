@@ -13,7 +13,7 @@ export class SwitchLangDirective {
   }
 
   @HostListener('click', ['$event'])
-  setLang(): void {
+  setLang($event): void {
     if (this.switchLang && 
       this.translateService.getLangs().indexOf(this.switchLang) !== -1) {
       this.translateService.use(this.switchLang);

@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { TalksOverviewRoutingModule } from './talks-overview-routing.module';
 import { TalksListComponent } from './talks-list/talks-list.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   imports: [
     CommonModule,
-    TalksOverviewRoutingModule
+    TalksOverviewRoutingModule,
+    TranslateModule
   ],
   declarations: [TalksListComponent]
 })
